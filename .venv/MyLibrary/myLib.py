@@ -1,0 +1,2 @@
+def calculateSquare(*args):
+    return
