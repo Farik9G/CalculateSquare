@@ -1,5 +1,7 @@
 import unittest
-from MyLibrary.myLib import Triangle
+from MyLibrary.Triangle import Triangle
+from Exceptions.TriangleTypeValidationException import TriangleTypeError
+from Exceptions.TriangleValueValidationException import TriangleValueError
 
 class TestTriangleCalc(unittest.TestCase):
     def testArea(self):
@@ -16,36 +18,28 @@ class TestTriangleCalc(unittest.TestCase):
         self.assertAlmostEqual(triangle4.square(), 27.810744326608734, places=5)
 
     def testValues(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TriangleValueError):
             Triangle(-5, -6, -10)
-        with self.assertRaises(ValueError):
-            Triangle(-11.637)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TriangleValueError):
+            Triangle(-11.637, -7.2, -5)
+        with self.assertRaises(TriangleValueError):
             Triangle(4, 5, 10)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TriangleValueError):
             Triangle(7.5, 5, 17.47)
 
     def testTypes(self):
-        with self.assertRaises(TypeError):
-            Triangle([11, 42, 17])
-        with self.assertRaises(TypeError):
-            Triangle([7])
-        with self.assertRaises(TypeError):
-            Triangle('14, 15, 29')
-        with self.assertRaises(TypeError):
-            Triangle('14' '15' '29')
-        with self.assertRaises(TypeError):
-            Triangle((5, 6, 12))
-        with self.assertRaises(TypeError):
-            Triangle((6, 5))
-        with self.assertRaises(TypeError):
-            Triangle(True, False)
-        with self.assertRaises(TypeError):
+        with self.assertRaises(TriangleTypeError):
+            Triangle([11], [12], [13])
+        with self.assertRaises(TriangleTypeError):
+            Triangle([7], 4, 5)
+        with self.assertRaises(TriangleTypeError):
+            Triangle('14', '15', '29')
+        with self.assertRaises(TriangleTypeError):
+            Triangle(True, True, True)
+        with self.assertRaises(TriangleTypeError):
+            Triangle(True, True, False)
+        with self.assertRaises(TriangleTypeError):
             Triangle(15+2j, 3+4j, 6)
-        with self.assertRaises(TypeError):
-            Triangle({5, 6, 13})
-        with self.assertRaises(TypeError):
-            Circle({1: '44'})
 
 
 

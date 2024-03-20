@@ -1,6 +1,8 @@
 import unittest
 from math import pi
-from MyLibrary.myLib import Circle
+from MyLibrary.Circle import Circle
+from Exceptions.RadiusTypeValidationException import RadiusTypeError
+from Exceptions.RadiusValueValidationException import RadiusValueError
 
 class TestCircleCalc(unittest.TestCase):
     def testArea(self):
@@ -17,28 +19,28 @@ class TestCircleCalc(unittest.TestCase):
         self.assertEqual(circle4.square(), 0)
 
     def testValues(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(RadiusValueError):
             Circle(-5)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(RadiusValueError):
             Circle(-10)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(RadiusValueError):
             Circle(-11.637)
 
     def testTypes(self):
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle([117, 32, 17])
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle([13])
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle('radius')
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle((5, 6))
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle(True)
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle(13+2j)
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle({6.5})
-        with self.assertRaises(TypeError):
+        with self.assertRaises(RadiusTypeError):
             Circle({1: '42'})
 
