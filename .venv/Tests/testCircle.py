@@ -34,8 +34,6 @@ class TestCircleCalc(unittest.TestCase):
         with self.assertRaises(TypeError):
             Circle((5, 6))
         with self.assertRaises(TypeError):
-            Circle((9))
-        with self.assertRaises(TypeError):
             Circle(True)
         with self.assertRaises(TypeError):
             Circle(13+2j)
