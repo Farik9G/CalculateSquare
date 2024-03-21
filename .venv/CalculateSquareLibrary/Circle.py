@@ -1,4 +1,4 @@
-from MyLibrary.Figure import Figure
+from CalculateSquareLibrary.Figure import Figure
 from math import pi
 from Exceptions.RadiusTypeValidationException import RadiusTypeError
 from Exceptions.RadiusValueValidationException import RadiusValueError
