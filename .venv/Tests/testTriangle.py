@@ -1,5 +1,5 @@
 import unittest
-from MyLibrary.Triangle import Triangle
+from CalculateSquareLibrary.Triangle import Triangle
 from Exceptions.TriangleTypeValidationException import TriangleTypeError
 from Exceptions.TriangleValueValidationException import TriangleValueError
 

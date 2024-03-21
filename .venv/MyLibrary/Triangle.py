@@ -1,4 +1,4 @@
-from MyLibrary.Figure import Figure
+from CalculateSquareLibrary.Figure import Figure
 from Exceptions.TriangleValueValidationException import TriangleValueError
 from Exceptions.TriangleTypeValidationException import TriangleTypeError
 from math import sqrt
