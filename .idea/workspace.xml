@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dae20b5-db0a-4ade-ac53-ae0579f59caf" name="Changes" comment="Add lib and exceptions to master">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/MyLibrary/Circle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/MyLibrary/Figure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/MyLibrary/Triangle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/Tests/testCircle.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Tests/testCircle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
     "Python.testCircle.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "unitTests"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,7 +75,7 @@
       <recent name="D:\Programming\Python\hhTasks" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.31">
     <configuration name="31" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hhTasks" />
       <option name="ENV_FILES" value="" />

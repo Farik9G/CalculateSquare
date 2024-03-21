@@ -1,6 +1,6 @@
 import unittest
 from math import pi
-from MyLibrary.Circle import Circle
+from CalculateSquareLibrary.Circle import Circle
 from Exceptions.RadiusTypeValidationException import RadiusTypeError
 from Exceptions.RadiusValueValidationException import RadiusValueError
 
