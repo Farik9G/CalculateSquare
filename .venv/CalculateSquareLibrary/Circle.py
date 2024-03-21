@@ -10,5 +10,6 @@ class Circle(Figure):
         if radius < 0:
             raise RadiusValueError("Radius must be not a negative value")
         self.radius = radius
+
     def square(self):
         return pi * self.radius * self.radius
